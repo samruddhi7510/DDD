@@ -1,0 +1,29 @@
+# =============================================================================
+# Driver Drowsiness Detection System (DrowseGuard AI) - Requirements
+# Optimized and Tested for Python 3.11 (Windows / Linux / macOS)
+# =============================================================================
+
+# --- Web Application & Real-Time Streaming Server ---
+fastapi>=0.110.0,<=0.115.0
+uvicorn[standard]>=0.28.0,<=0.34.0
+pydantic>=2.6.4,<3.0.0
+websockets>=12.0,<=14.0
+python-multipart>=0.0.9
+cryptography>=42.0.0,<=45.0.0
+
+# --- Computer Vision & Facial Geometry Pipeline ---
+opencv-python>=4.8.0.76,<=4.10.0.84
+mediapipe>=0.10.9,<=0.10.14
+Pillow>=10.2.0,<=11.1.0
+
+# --- Scientific Computing & Telemetry Analytics ---
+numpy>=1.24.3,<2.0.0
+scipy>=1.11.4,<=1.14.1
+pandas>=2.1.4,<=2.2.3
+
+# =============================================================================
+# Optional Deep Learning Training Pipeline (for train_models.py)
+# Uncomment the packages below if you plan to train/fine-tune models locally:
+# =============================================================================
+# tensorflow>=2.15.0,<2.16.0; sys_platform != "darwin"
+# ultralytics>=8.1.0,<=8.3.0
